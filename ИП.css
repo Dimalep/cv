@@ -1,0 +1,518 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+#conteiner{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 15% 90%;
+}
+#conteiner > div {
+    float: left;
+}
+
+#top{
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+#hr1 {
+    height: 3px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#menu{
+    max-width: 200px;
+    height: 420px;
+    margin-top: 10px;
+}
+#menu1{
+    background-color: aqua;
+    max-width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(140, 170, 175);
+}
+
+#topname{
+    text-align: center;
+    justify-content: center;
+
+}
+
+/* content */
+img{
+    width: 80%;
+    height: 375px;
+    margin-top: 50px;
+}
+
+#content{
+    margin-left:130px ;
+    max-width: 80%;
+    min-width: 500px;
+    z-index: 10;
+}
+
+#text{
+    max-width: 80%;
+    min-width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#buttonline{
+    height: 2px;
+    background-color: black;
+    text-align: center;
+    width: 40%;
+    margin-top: 30px;
+}
+
+/*bot*/
+#bot{
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+#open_modal{
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+#open_modal:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box{
+    position: relative;
+    background-color: white;
+    max-width: 50%;
+    height: 500px;
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal.open #modal_box{
+    transform: scale(1);
+}
+
+#close_modal{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+2
+
+button{
+    border:none;
+}
+#open_modal3{
+    padding: 2px;
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    font-size: 20px;
+    margin:2px;
+}
+#open_modal3:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal3{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box3{
+    position: relative;
+    background-color: white;
+    max-width: 60%;
+    height: 600px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal3.open3{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal3.open3 #modal_box3{
+    transform: scale(1);
+}
+
+#close_modal3{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal3:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+
+2
+#open_modal{
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#open_modal:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box{
+    position: relative;
+    background-color: white;
+    max-width: 60%;
+    height: 600px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal.open #modal_box{
+    transform: scale(1);
+}
+
+#close_modal{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+2
+
+button{
+    border:none;
+}
+#open_modal4{
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    margin: 2px;
+    font-size: 20px;
+}
+#open_modal4:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal4{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box4{
+    position: relative;
+    background-color: white;
+    max-width: 60%;
+    height: 600px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal4.open4{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal4.open4 #modal_box4{
+    transform: scale(1);
+}
+
+#close_modal4{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal4:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+
+2
+
+button{
+    border:none;
+}
+#open_modal5{
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    border: none;
+    margin: 2px;
+    font-size: 20px;
+}
+#open_modal5:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal5{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box5{
+    position: relative;
+    background-color: white;
+    max-width: 60%;
+    height: 600px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal5.open5{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal5.open5 #modal_box5{
+    transform: scale(1);
+}
+
+#close_modal5{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal5:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+2
+
+button{
+    border:none;
+}
+.open_modal2{
+    width: 200px;
+    height: 80px;
+    background-color: aqua;
+    margin: 2px;
+    font-size: 20px;
+    border:none;
+}
+#open_modal2:hover{
+    background-color: rgb(167, 203, 235);
+    cursor: pointer;
+}
+#modal2{
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    position: fixed;
+
+}
+#modal_box2{
+    position: relative;
+    background-color: white;
+    max-width: 60%;
+    height: 600px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    transform: scale(0);
+    transition: .8s;
+    padding: 50px;
+    text-align: justify;
+    overflow-y: auto;
+    position: fixed;
+
+}
+#modal2.open2{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal2.open2 #modal_box2{
+    transform: scale(1);
+}
+
+#close_modal2{
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    position: fixed;
+}
+#close_modal2:hover{
+    color: rgb(149, 214, 206);
+    cursor: pointer;
+}
+
+/*img*/
+
+#pcss{
+    width: 700px;
+}
+
+/*hooter*/
+#hooter{
+    max-width:100%;
+    height:150px;
+    background-color: rgb(136, 157, 161);
+    margin-top: 200px;
+}
