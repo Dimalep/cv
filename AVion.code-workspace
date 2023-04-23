@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../AVion"
+		},
+		{
+			"path": "../HTML_curs"
+		},
+		{
+			"path": "../PYTHON1"
+		},
+		{
+			"path": "../калькулятор"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "проект_Х"
+	}
+}
